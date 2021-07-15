@@ -6,7 +6,7 @@ export const useLogout = () => {
   const routes = useRouter();
 
   const handleLogout = async () => {
-    await auth.signOut();
+    auth.signOut();
     routes.push("/login");
   };
 

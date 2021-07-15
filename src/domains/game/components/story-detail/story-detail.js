@@ -14,7 +14,7 @@ import useFlipCards from "@domains/game/hooks/use-flip-cards";
 import { getScore } from "common/utils/helpers/score";
 
 const StoryDetail = ({ game }) => {
-  const { user } = useUserSession();
+  const { user = {} } = useUserSession();
   const { participants = [] } = useParticipantList(game.id);
   const { handleResetAllParticipantScore } = useParticipantScore();
   const { story = {} } = useStory(game.story);
@@ -48,8 +48,16 @@ const StoryDetail = ({ game }) => {
           />
         </div>
       </div>
+
       <div className={styles.participants}>
-        <Title variant="h5">Participants</Title>
+        <div>
+          <Title variant="h5">Participants</Title>
+          <p>
+            Share this URL to invite more persons to this room. Code of this
+            room : <strong>{game.id}</strong>
+          </p>
+        </div>
+
         <Divider />
         <Participants participants={participants} game={game} />
       </div>

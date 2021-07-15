@@ -4,6 +4,7 @@ import styles from "./content.module.css";
 import useTabs from "@domains/dashboard/hooks/use-tabs";
 import CreateForm from "../create-form/create-form";
 import GameList from "../game-list/game-list";
+import JoinGame from "../join-game/join-game";
 
 const Content = ({ handleCreateGame, games }) => {
   const { tab, setTab } = useTabs();
@@ -12,12 +13,13 @@ const Content = ({ handleCreateGame, games }) => {
       <Paper className={styles.paper}>
         <Title variant="h4">Dashboard</Title>
         <Tabs
-          labels={["New Game", "My saved games"]}
+          labels={["Join Game", "New Game", "My saved games"]}
           tabActive={tab}
           handleClick={setTab}
         >
-          {tab === 0 && <CreateForm handleCreateGame={handleCreateGame} />}
-          {tab === 1 && <GameList games={games} />}
+          {tab === 0 && <JoinGame />}
+          {tab === 1 && <CreateForm handleCreateGame={handleCreateGame} />}
+          {tab === 2 && <GameList games={games} />}
         </Tabs>
       </Paper>
     </div>

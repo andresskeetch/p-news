@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./actions.module.css";
-import { Button } from "common/components";
+import { Button, Input } from "common/components";
 
 const Actions = ({ handleResetAllParticipantScore, handleFlipCards, game }) => {
   return (

@@ -21,11 +21,10 @@ const EnterGame = ({ game }) => {
   );
 };
 const Game = ({ id }) => {
-  const { game, exists = true } = useGame(id);
+  const { game, isLoading } = useGame(id);
+  if (isLoading) return <Backdrop open={isLoading} />;
 
-  if (!game) return <Backdrop open={!game} />;
-
-  if (!exists) return <NotFoundGame />;
+  if (!game) return <NotFoundGame />;
 
   return <EnterGame game={game} />;
 };

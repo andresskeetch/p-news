@@ -12,7 +12,12 @@ const useLoginUser = () => {
     try {
       await firebase.auth().signInWithEmailAndPassword(email, password);
       setSuccess(true);
-      routes.push("/");
+      if (localStorage.getItem("url")) {
+        location.href = localStorage.getItem("url");
+        localStorage.setItem("url", "");
+      } else {
+        routes.push("/");
+      }
     } catch (e) {
       console.log(e);
     }
@@ -22,10 +27,17 @@ const useLoginUser = () => {
   const handleLoginGoogle = async () => {
     setLoading(true);
     try {
+      console.log(localStorage.getItem("url"));
       const provider = new firebase.auth.GoogleAuthProvider();
-      await firebase.auth().signInWithRedirect(provider);
+      await firebase.auth().signInWithPopup(provider);
       setSuccess(true);
-      routes.push("/");
+
+      if (localStorage.getItem("url")) {
+        location.href = localStorage.getItem("url");
+        localStorage.setItem("url", "");
+      } else {
+        routes.push("/");
+      }
     } catch (e) {}
     setLoading(false);
   };

@@ -16,6 +16,7 @@ export default function MyApp(props) {
       <AuthProvider>
         <ThemeProvider theme={theme}>
           <Head>
+            <link rel="shortcut icon" href="/favicon.png" />
             <meta
               name="viewport"
               content="initial-scale=1.0, width=device-width"

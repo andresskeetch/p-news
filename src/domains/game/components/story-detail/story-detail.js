@@ -60,13 +60,7 @@ const StoryDetail = ({ game }) => {
       </div>
 
       <div className={styles.participants}>
-        <div>
-          <Title variant="h5">Participants</Title>
-          <p>
-            Share this URL to invite more persons to this room. Code of this
-            room : <strong>{game.id}</strong>
-          </p>
-        </div>
+        <Title variant="h5">Participants</Title>
 
         <Divider />
         <Participants participants={participants} game={game} />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Backdrop, Paper } from "common/components";
-import { LoginForm } from "./components";
+import { LoginForm, Header } from "./components";
 import useLogin from "./hooks/use-login-user";
 import styles from "./login.module.css";
 
@@ -10,6 +10,7 @@ const Login = () => {
   return (
     <>
       <Nav />
+      <Header />
       <div className={styles.container}>
         <Paper className={styles.paper}>
           <LoginForm

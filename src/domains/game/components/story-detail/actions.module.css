@@ -1,0 +1,17 @@
+.container {
+  background-color: #BDBDBD;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding: 1rem;
+  width: fit-content;
+ 
+}
+
+.button { 
+  width: auto;
+
+}

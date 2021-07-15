@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem 0rem;
+  gap: 1rem 0rem;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 7rem)); 
+}
+
+.card {
+  width: 5rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card:hover {
+  transform: scale(1.5);
+}
+
+.card__title {
+  color: #fff;
+  font-weight: bold !important;
+}
+
+.selected {
+  transform: scale(1.5);
+}

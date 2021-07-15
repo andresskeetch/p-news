@@ -1,0 +1,25 @@
+.container {
+  text-align: start;
+}
+
+.containerdetail {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 1rem !important;
+}
+
+.header {
+  font-weight: 400;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.button {
+  width: auto !important;
+}

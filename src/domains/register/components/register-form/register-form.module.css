@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  margin-top: 2rem;
+}

@@ -1,0 +1,11 @@
+.paper {
+  width: 40rem;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}

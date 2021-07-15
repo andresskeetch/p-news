@@ -1,0 +1,28 @@
+.container {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.participants {
+  margin: 1rem 0rem;
+}
+
+.subtitle {
+  color: #757575
+}
+
+.voting {
+  margin-top: auto;
+}

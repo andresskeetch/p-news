@@ -23,9 +23,9 @@ export default function MyApp(props) {
             />
             <meta
               name="description"
-              content="Planing Stories with free tool and easy to use."
+              content="Planning Stories with free tool and easy to use."
             />
-            <meta name="keywords" content="SCRUM, PLANING, STORIES" />
+            <meta name="keywords" content="SCRUM, PLANNING, STORIES" />
           </Head>
           <CssBaseline />
           <Component {...pageProps} />

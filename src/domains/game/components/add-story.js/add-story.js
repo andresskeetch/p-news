@@ -30,7 +30,7 @@ const AddStory = ({ gameId }) => {
       />
       <Dialog
         title="Add Story"
-        description="To planing a new story add name in the input below."
+        description="To Planning a new story add name in the input below."
         open={open}
         handleClose={() => setOpen(false)}
         actions={

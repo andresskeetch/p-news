@@ -42,7 +42,8 @@ export const useAddParticipantValidate = (gameId) => {
 
   const query = firestore
     .collection("participant")
-    .where("user", "==", user.uid);
+    .where("user", "==", user.uid)
+    .where("game", "==", gameId);
 
   const [participant] = useCollectionData(query);
 

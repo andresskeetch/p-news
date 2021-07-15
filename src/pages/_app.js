@@ -23,7 +23,7 @@ export default function MyApp(props) {
             />
             <meta
               name="description"
-              content="Planning Stories with free tool and easy to use."
+              content="Planning Stories for your agile sprints with free tool and easy to use. Story points Fibonacci sequency"
             />
             <meta name="keywords" content="SCRUM, PLANNING, STORIES" />
           </Head>

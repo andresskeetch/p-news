@@ -32,12 +32,21 @@ const StoryDetail = ({ game }) => {
       cleanScores.length > 0 ? getScore(cleanScores.map((p) => p.score)) : "-";
     handleAddScoreStory(story.id, score);
   };
+
+  const handleResetScore = () => {
+    handleAddScoreStory(story.id, "-");
+    handleResetAllParticipantScore(game.id);
+    handleflipCards(false);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.head}>
         <Score score={story.score} />
         <div>
-          <Title variant="h3">{game.name}</Title>
+          <Title variant="h3" className={styles.title}>
+            {game.name}
+          </Title>
           <Title variant="h4" className={styles.subtitle}>
             Story: {story.name}
           </Title>
@@ -45,6 +54,7 @@ const StoryDetail = ({ game }) => {
             handleResetAllParticipantScore={handleReset}
             handleFlipCards={handleFlip}
             game={game}
+            handleResetScore={handleResetScore}
           />
         </div>
       </div>

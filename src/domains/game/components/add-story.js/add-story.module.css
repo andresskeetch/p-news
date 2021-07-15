@@ -1,8 +1,14 @@
 .container {
   margin-top: auto;
-  padding: .5rem 1rem;
 }
 
 .button {
   width: auto;
 }
+
+@media (min-width: 700px) { 
+  .container {
+    margin-top: auto;
+    padding: .5rem 1rem;
+  }
+ }

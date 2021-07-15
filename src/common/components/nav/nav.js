@@ -25,7 +25,7 @@ export default function NavBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={styles.title}>
-            Planing News
+            Planing Stories
           </Typography>
           {hasSession ? (
             <>

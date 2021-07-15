@@ -5,6 +5,7 @@
   flex-direction: column;
   padding-bottom: 0;
   overflow: hidden;
+  background-color: var(--background-paper);
 }
 
 .head {
@@ -25,4 +26,15 @@
 
 .voting {
   margin-top: auto;
+}
+
+.title {
+  font-size: 2rem !important;
+}
+
+@media (min-width: 700px) {
+  .title {
+    font-size: 3rem;
+  }
+  
 }

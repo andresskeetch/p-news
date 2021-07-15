@@ -37,6 +37,7 @@ const AddStory = ({ gameId }) => {
           <Button
             color="primary"
             label="Add story"
+            variant="outlined"
             onClick={handleSubmit(onSubmit)}
             className={styles.button}
           />

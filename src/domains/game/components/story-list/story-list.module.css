@@ -1,21 +1,22 @@
 .container {
   height: calc(100vh - 4rem);
-  width: 20rem;
-  background-color: #B3E5FC;
+  width: 5rem;
+  background-color: var(--background-default);
   display: flex;
   flex-direction: column;
 }
 
+
 .header {
   width: 100%;
   height: 2rem;
-  background-color: #536DFE;
+  background-color: var(--info);
   color: #fff;
   padding: 0 0.5rem;
 }
 
 .story {
-  background-color: #fff;
+  background-color: var(--background-paper);
   height: 2rem;
   width: 100%;
   display: flex;
@@ -25,12 +26,13 @@
 }
 
 .story:hover {
-  background-color: #B3E5FC;
+  background-color: var(--info);
+  color: var(--background-paper);
 }
 
 .selected {
-  background-color: #B3E5FC;
-  box-shadow: inset 0 0 10px #fff;
+  background-color: var(--info);
+  color: var(--background-paper);
 }
 
 .p {
@@ -53,3 +55,14 @@
   padding: 0;
   width: 100%;
 }
+
+
+@media (min-width: 700px) { 
+  .container {
+    height: calc(100vh - 4rem);
+    width: 20rem;
+    background-color: var(--background-default);
+    display: flex;
+    flex-direction: column;
+  }
+ }

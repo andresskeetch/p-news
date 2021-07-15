@@ -36,14 +36,14 @@ const LoginForm = ({ handleLogin, handleLoginGoogle }) => {
         />
         <Button
           label="Log in with Google"
-          variant="contained"
-          color="default"
+          variant="outlined"
+          color="primary"
           onClick={handleLoginGoogle}
         />
         <Button
           label="Register"
-          variant="contained"
-          color="primary"
+          variant="outlined"
+          color="secondary"
           href="/register"
         />
       </form>

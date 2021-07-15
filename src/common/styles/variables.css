@@ -1,0 +1,15 @@
+:root {
+  --main: #1976d2;
+  --info: #2196f3;
+  --secondary: #dc004e;
+  --error: #f44336;
+  --warning: #ff9800;
+  --success: #4caf50;
+
+
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.54);
+
+  --background-paper: #fff;
+  --background-default: #fafafa;
+}

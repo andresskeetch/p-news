@@ -18,10 +18,11 @@
 .title {
   margin: 0;
   margin-top: auto;
-  text-transform: capitalize;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .score {

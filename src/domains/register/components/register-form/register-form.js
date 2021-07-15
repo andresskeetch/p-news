@@ -40,7 +40,7 @@ const RegisterForm = ({ handleCreateUser, error }) => {
 
         <Button
           type="submit"
-          label="Registar"
+          label="Register"
           variant="contained"
           color="primary"
         />

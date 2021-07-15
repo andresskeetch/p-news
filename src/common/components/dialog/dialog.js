@@ -26,7 +26,7 @@ export default function FormDialog({
         {children}
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleClose} color="primary">
+        <Button onClick={handleClose} color="secondary" variant="outlined">
           Cancel
         </Button>
         {actions}

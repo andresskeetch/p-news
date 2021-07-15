@@ -3,7 +3,8 @@
   padding: 1rem;
   grid-gap: 1rem 0rem;
   gap: 1rem 0rem;
-  grid-template-columns: repeat(auto-fill, minmax(5rem, 7rem)); 
+  grid-template-columns: repeat(auto-fill, minmax(2rem, 2rem)); 
+  grid-auto-flow: column;  
 }
 
 .card {
@@ -14,10 +15,11 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out !important;
+  z-index: 1;
 }
 
 .card:hover {
-  transform: scale(1.5);
+  transform: translateY(-3rem);
 }
 
 .card__title {
@@ -26,5 +28,30 @@
 }
 
 .selected {
-  transform: scale(1.5);
+  transform: translateY(-3rem);
+  z-index: 0;
+}
+
+@media (min-width: 500px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 3rem)); 
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 5rem)); 
+  }
+  .selected {
+    transform: scale(1.5) translateY(-1rem);
+  }
+  .card:hover {
+    transform: scale(1.5) translateY(-1rem);;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 7rem)); 
+  }
 }
